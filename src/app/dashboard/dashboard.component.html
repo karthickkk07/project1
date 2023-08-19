@@ -1,1 +1,23 @@
 <p>dashboard works!</p>
+<!-- <ul>
+    <li *ngFor="let anime of string.anime()"> 
+        {{anime.name}} of {{anime.hero}}
+    </li>
+</ul> -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Hero</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let anime of string.anime()">
+
+      <tr>
+        <td>{{anime.name}}</td>
+        <td>{{anime.hero}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

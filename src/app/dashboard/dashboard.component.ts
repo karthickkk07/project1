@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { StringService } from '../string.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  constructor(public string:StringService){
+
+    
+
+  }
+  
 }

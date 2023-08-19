@@ -12,4 +12,17 @@ export class StringService {
   public GetText(){
     return 'string from service';
   }
+
+  Anime=[
+    {name:'naruto',hero:'naruto'},
+    {name:'onepiece',hero:'Luffy'},
+    {name:'Dragon balls',hero:'Goku'},
+    {name:'Attack On titans',hero:'Eren'},
+  ]
+
+   public anime(){
+    return this.Anime;
+   }
+   
+
 }
