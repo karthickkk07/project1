@@ -1,31 +1,22 @@
-<p>login works!</p>
-<div>
-
+<mat-card>
+    <mat-card-content>
+        <h2 style="background-color: rgb(13, 83, 244);">Login Page</h2>
+        <form (ngSubmit)="login()" class="form-control">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <mat-form-field>
+                        <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+                    </mat-form-field><br>
+                    <mat-form-field>
+                        <input matInput placeholder="password" [(ngModel)]="password" name="password">
+                    </mat-form-field><br>
+                    <button mat-raised-button color="primary" type="submit">Login</button><br><br>
+                </div>
+                <div class="col-sm"></div>
+              </div>
+            
+        </form>
+    </mat-card-content>
     
-    <!-- <label for="Uname"><b>Username</b></label>
-    <br>
-    <input type="text" [(ngModel)]="email" placeholder="enter the user id" name="uname" required>
-    <br>
-    <label for="password"><b>password</b></label>
-    <br>
-    <input type="password"  [(ngModel)]="password" name="password" required>
-    <br>
-    <form><button (click)="login()">login</button>
-    </form> -->
-
-
-    
-</div>
-<div>
-    <form>
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1">
-    <button type="submit" (click)="login" class="btn btn-primary">Submit</button>
-
-  </form>
-</div>
-
-  
+    </mat-card>

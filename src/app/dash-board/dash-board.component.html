@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-content>
+        <h2>
+            Student DashBoard
+        </h2>
+        <table class="table-warning">
+         <tr class="table-warning" >
+            <th>Name</th>
+            <th>Degree</th>
+            <th>Specilist</th>
+            <th>Address</th>
+            <th>PhoneNumber</th>
+        </tr> 
+        <tr class="table-warning" *ngFor="let stu of student">
+
+                <td>{{stu.name}}</td>
+                <td>{{stu.Degree}}</td>
+                <td>{{stu.specialist}}</td>
+                <td>{{stu.address}}</td>
+                <td>{{stu.phoneNumber}}</td>
+            </tr>
+          
+    
+        </table>
+    </mat-card-content>
+</mat-card>
